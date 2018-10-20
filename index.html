@@ -1,37 +1,253 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Work+Sans">
-	<title>Death</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
 	<style type="text/css">
-	#box-container{ 
-		display: flex;
-    	height: 500px;
-    	flex-wrap: column;
+	/* Color */
+		/* Dropdown Button */
+.dropcolorbutton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    font-family: Raleway, sans-serif;
+}
 
-		}
-	#box-1{
-		background-color: white;
-    	align-self: flex-start;
-    	height: 400px;
-    	width: 2000px;
-		}
-	p{
-		font-size: 50px;
-		font-family: Work Sans, sans-serif;
-		padding: 400px 0px 400px 0px;
+/* The container <div> - needed to position the dropdown content */
+.dropdowncolor {
+    position: relative;
+    display: inline-block;
+}
 
-	}
+/* Dropdown Content (Hidden by Default) */
+.dropdowncolor-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdowncolor-content a {
+    color: black;
+    padding: 30px 30px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdowncolor-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdowncolor:hover .dropdowncolor-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdowncolor:hover .dropcolorbutton {background-color: #3e8e41;}
+/*Color End*/
+
+/*Font*/
+.dropfontbutton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    font-family: Raleway, sans-serif;
+}
+
+.dropdownfont {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownfont-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdownfont-content a {
+    color: black;
+    padding: 30px 30px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownfont-content a:hover {background-color: #ddd;}
+
+
+.dropdownfont:hover .dropdownfont-content {display: block;}
+
+.dropdownfont:hover .dropfontbutton {background-color: #3e8e41;}
+/*Font End*/
+
+/*Position*/
+.droppositionbutton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    font-family: Raleway, sans-serif;
+}
+
+.dropdownposition {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownposition-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdownposition-content a {
+    color: black;
+    padding: 30px 30px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownposition-content a:hover {background-color: #ddd;}
+
+
+.dropdownposition:hover .dropdownposition-content {display: block;}
+
+.dropdownposition:hover .dropdownpositionbutton {background-color: #3e8e41;}
+/*Position End*/
+
+/*Scale*/
+.dropscalebutton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    font-family: Raleway, sans-serif;
+}
+
+.dropdownscale {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownscale-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdownscale-content a {
+    color: black;
+    padding: 30px 30px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownscale-content a:hover {background-color: #ddd;}
+
+
+.dropdownscale:hover .dropdownscale-content {display: block;}
+
+.dropdownscale:hover .dropscalebutton {background-color: #3e8e41;}
+/*Scale Ends*/
+
+/*Toneage*/
+.droptonagebutton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    font-family: Raleway, sans-serif;
+}
+
+.dropdowntonage {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdowntonage-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdowntonage-content a {
+    color: black;
+    padding: 30px 30px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdowntonage-content a:hover {background-color: #ddd;}
+
+
+.dropdowntonage:hover .dropdowntonage-content {display: block;}
+
+.dropdowntonage:hover .droptonagebutton {background-color: #3e8e41;}
+/*Tonage Ends*/
 	</style>
 </head>
 <body>
-	<div id="box-container">
-		<div id="box-1">
-		<p><center>I am become death, the destroyer of worlds.</center></p></div>
+	<div class="dropdowncolor">
+  <button class="dropcolorbutton">Color</button>
+  <div class="dropdowncolor-content">
+    <a href="Color1.html">Variation 1</a>
+    <a href="Color2.html">Variation 2</a>
+    <a href="Color3.html">Variation 3</a>
+  </div>
 
-	</div>
+  <div class="dropdownfont">
+  <button class="dropfontbutton">Font</button>
+  <div class="dropdownfont-content">
+    <a href="Font1.html">Variation 1</a>
+    <a href="Font2.html">Variation 2</a>
+    <a href="Font3.html">Variation 3</a>
+  </div>
+</div>
 
-	
+<div class="dropdownposition">
+  <button class="droppositionbutton">Position</button>
+  <div class="dropdownposition-content">
+    <a href="Position1.html">Variation 1</a>
+    <a href="Position2.html">Variation 2</a>
+    <a href="Position3.html">Variation 3</a>
+  </div>
+</div>
+
+<div class="dropdownscale">
+  <button class="dropscalebutton">Scale</button>
+  <div class="dropdownscale-content">
+    <a href="Scale1.html">Variation 1</a>
+    <a href="Scale2.html">Variation 2</a>
+    <a href="Scale3.html">Variation 3</a>
+  </div>
+</div>
+
+<div class="dropdowntonage">
+  <button class="droptonagebutton">Tonage</button>
+  <div class="dropdowntonage-content">
+    <a href="Tonage1.html">Variation 1</a>
+    <a href="Tonage2.html">Variation 2</a>
+    <a href="Tonage3.html">Variation 3</a>
+  </div>
+</div>
 </body>
 </html>
